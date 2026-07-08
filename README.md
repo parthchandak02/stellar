@@ -1,32 +1,21 @@
-# React + TypeScript + Vite
+# Stellar — GitHub Star Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Explore Parth Chandak's GitHub repos as a 3D star constellation. Each repo is a star — older repos shine larger, programming languages color them, recent activity makes them pulse.
 
-Currently, two official plugins are available:
+**Visual Style:** Dark — Void (adapted for celestial). Deep space black with blue-white accent stars.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Data Source:** GitHub REST API (`api.github.com/users/parthchandak02/repos`)
 
-## React Compiler
+**How it works:**
+- Data field `created_at` controls star size (older repos = larger stars)
+- Data field `language` controls star color (mapped to recognizable language colors)
+- Data field `pushed_at` controls star pulse speed (recently pushed = faster pulse)
+- Tap/click a star to reveal a detail panel with repo name, creation date, last push, and description
+- Same-language repos connect by faint constellation lines
+- Auto-rotate to explore, or orbit manually
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**GitHub:** https://github.com/parthchandak02/stellar
 
-## Expanding the Oxlint configuration
+**Live:** https://stellar.parthchandak.info
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+**Tech:** React Three Fiber + drei. Hosted on Cloudflare Pages.
