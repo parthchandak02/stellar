@@ -11,7 +11,8 @@ const GOLDEN_RATIO = (1 + Math.sqrt(5)) / 2
 export function starRadius(createdAt: string, minDate: number, maxDate: number): number {
   const created = new Date(createdAt).getTime()
   if (maxDate <= minDate) return 0.15
-  const t = (created - minDate) / (maxDate - minDate)
+  // Older repos shine larger: the oldest gets t = 1, the newest t = 0
+  const t = (maxDate - created) / (maxDate - minDate)
   return 0.08 + Math.min(1, Math.max(0, t)) * 0.28
 }
 

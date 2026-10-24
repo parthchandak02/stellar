@@ -22,9 +22,9 @@
 
 <br><br>
 
-<a href="https://stellar.parthchandak.info"><img src="docs/assets/readme/hero.jpg" width="100%" alt="Seventy-five blue, orange, yellow and grey spheres of different sizes arranged in a flattened shell on a black background, joined by faint coloured lines, with 75 repositories in large blue type top-left and a TypeScript, HTML, Python, JavaScript, Swift legend at the bottom"></a>
+<a href="https://stellar.parthchandak.info"><img src="docs/assets/readme/hero.jpg" width="100%" alt="Seventy-six blue, orange, yellow and grey spheres, mostly small with a few large old ones, arranged in a flattened shell on a black background, joined by faint coloured lines, with 76 repositories in large blue type top-left and a TypeScript, HTML, Python, JavaScript, Swift legend at the bottom"></a>
 
-<sub>Live capture, 22 October 2026. Real GitHub data: 75 public repositories.</sub>
+<sub>Live capture, 23 October 2026. Real GitHub data: 76 public repositories.</sub>
 
 </div>
 
@@ -39,7 +39,7 @@ The camera slowly orbits. It re-fetches every 60 seconds; unauthenticated reques
 | Repo field | Drives |
 |---|---|
 | `language` | Star colour, using GitHub's own language colours; the five most common appear in the legend |
-| `created_at` | Star size, scaled between the oldest and newest repo; newer repos come out larger |
+| `created_at` | Star size, scaled between the oldest and newest repo; older repos come out larger |
 | `pushed_at` | Pulse speed: repos pushed in the last year pulse faster the more recent the push |
 | `language` (again) | Each star draws a faint line to its nearest neighbour of the same language, if one is close enough |
 
